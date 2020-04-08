@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header'
-import Intro from './components/Intro';
+import Card from './components/Card';
+import Container from './components/Container'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Intro />
-      <Intro text='dsadsad' />
+      <Container>
+        <Card>
+          Lala
+      </Card>
+      </Container>
 
     </div>
   );
