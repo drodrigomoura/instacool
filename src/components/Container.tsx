@@ -1,13 +1,13 @@
-import React from 'react'
+import * as React from 'react';
 
 const style = {
+    alignItems: 'center',
     backgroundColor: '#eee',
-    padding: '10px 15px',
-    height: 'calc(100vh - 20px)',
-    width: 'calc(100vw - 30px)',
     display: 'flex',
+    height: 'calc(100vh - 20px)',
     justifyContent: 'center',
-    alignItems: 'center'
+    padding: '10px 15px',
+    width: 'calc(100vw - 30px)',
 }
 
 export default class Container extends React.Component {
