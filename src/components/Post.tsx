@@ -24,6 +24,7 @@ export default class Post extends React.Component<IPostProps> {
                         <FontAwesomeIcon icon={faThumbsUp} />
                         Like
                     </div>
+
                     <div style={{ flex: 1, textAlign: 'center', padding: '10px 15px', cursor: 'pointer' }}>
                         <FontAwesomeIcon icon={faRetweet} />
                         Share
