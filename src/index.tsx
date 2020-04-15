@@ -1,28 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-import { Router } from 'react-router'
+import './index.css';
+
 import { createBrowserHistory } from 'history'
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import * as reducers from './ducks'
+import { Router } from 'react-router'
+import { applyMiddleware, createStore, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
+import { reducer as formReducer } from 'redux-form'
+
+import App from './App';
+import * as reducers from './ducks'
+import * as serviceWorker from './serviceWorker';
 import services from './services'
+
+
 const store = createStore(combineReducers({
-  ...reducers
+  ...reducers,
+  form: formReducer,
 }), applyMiddleware(thunk.withExtraArgument(services)))
+
 const history = createBrowserHistory()
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <Router history={history}>
-        <App />
-      </Router>
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
   document.getElementById('root')
 );
 

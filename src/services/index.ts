@@ -1,8 +1,8 @@
-import * as firebase from 'firebase'
+import * as firebase from './firebase'
 import { firestore, storage, auth } from 'firebase'
 
 const services = {
-    ...firebase,
+    ...firebase
 }
 
 export interface IServices {
@@ -11,4 +11,4 @@ export interface IServices {
     storage: storage.Storage
 }
 
-export default services
+export default services;

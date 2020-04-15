@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { WrappedFieldProps } from 'redux-form'
 
 const style = {
     backgroundColor: '#fff',
@@ -21,14 +22,14 @@ interface IInputProps {
     label: string
 }
 
-export default class Input extends React.Component<IInputProps> {
-    public render() {
-        const { label } = this.props
-        return (
-            <div>
-                <span style={spanStyle}>{label}</span>
-                <input {...this.props} style={style} />
-            </div>
-        )
-    }
+const Input: React.StatelessComponent<WrappedFieldProps & IInputProps> = props => {
+    const { label, input } = props
+    return (
+        <div>
+            <span style={spanStyle}>{label}</span>
+            <input {...input} {...props} style={style} />
+        </div>
+    )
 }
+
+export default Input
