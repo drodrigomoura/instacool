@@ -1,23 +1,32 @@
-import { Dispatch } from "redux"
+import { Dispatch, AnyAction } from "redux"
 import { IServices } from "../services"
+import { firestore } from "firebase"
 
 const START = 'post/fetch-start'
 const SUCCESS = 'post/fetch-success'
 const ERROR = 'post/fetch-error '
 
-const fetchStart = () => {
+interface IData {
+    [key: string]: {
+        comment: string,
+        userId: string,
+        createdAt: firestore.Timestamp
+    }
+}
+
+const fetchStart = () => ({
     type: START
-}
+})
 
-const fetchSuccess = (payload: any) => {
-    payload
-    type: SUCCESS
+const fetchSuccess = (payload: IData) => ({
+    payload,
+    type: SUCCESS,
 }
-
-const fetchError = (error: any) => {
-    error
-    type: ERROR
-}
+)
+const fetchError = (error: Error) => ({
+    error,
+    type: ERROR,
+})
 
 
 const initialState = {
@@ -26,21 +35,21 @@ const initialState = {
     fetching: false,
 }
 
-export default function reducer(state = initialState, action) {
+export default function reducer(state = initialState, action: AnyAction) {
     switch (action.type) {
-        case 'START':
+        case START:
             return {
                 ...state,
                 fetching: true
             }
-        case 'SUCCESS':
+        case SUCCESS:
             return {
                 ...state,
                 data: action.payload,
                 fetched: true,
                 fetching: true
             }
-        case 'ERROR':
+        case ERROR:
             return {
                 ...state,
                 error: action.error,
@@ -56,8 +65,8 @@ export const fetchPosts = () =>
         dispatch(fetchStart())
         try {
             const snaps = await db.collection('posts').get()
-            const posts = {}
-            snaps.forEach(x => posts[x.id] = x.data())
+            const posts: { [index: string]: any } = {}
+            snaps.forEach((x) => posts[x.id] = x.data())
             dispatch(fetchSuccess(posts))
         } catch (e) {
             dispatch(fetchError(e))
