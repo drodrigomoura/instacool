@@ -22,7 +22,6 @@ class App extends React.Component<IAppProps> {
 
   public componentDidMount() {
     const { auth } = services
-
     auth.onAuthStateChanged(user => {
       if (user) {
         /* eslint no-restricted-globals:0 */

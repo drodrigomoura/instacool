@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import { ThunkDispatch } from 'redux-thunk';
+import { ThunkDispatch } from 'redux-thunk';
 
 import Card from '../../components/Card';
 import Container from '../../components/Container'
@@ -29,7 +29,7 @@ class Login extends React.Component<ILoginProps> {
 
 const mapStateToProps = (state: any) => state
 
-const mapDispatchToProps = (dispatch: any) => ({
+const mapDispatchToProps = (dispatch: ThunkDispatch<any, any, any>) => ({
     login: (payload: any) => dispatch(loginThunk(payload))
 })
 
