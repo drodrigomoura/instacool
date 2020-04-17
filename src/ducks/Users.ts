@@ -15,7 +15,10 @@ export const login = ({ email, password }: ILogin) =>
 
 
 export const register = ({ email, password }: ILogin) =>
-    async (dispatch: Dispatch, getState: () => any, { auth }: IServices) => {
-        const user = auth.createUserWithEmailAndPassword(email, password)
-        console.log(user);
+    async (dispatch: Dispatch, getState: () => any, { auth, db }: IServices) => {
+        const userCredential = await auth.createUserWithEmailAndPassword(email, password)
+        const { user } = userCredential
+        const id = user ? user.uid : undefined
+        const doc = db.collection('users').doc(id)
+        await doc.set({ role: 'user' })
     }
