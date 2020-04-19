@@ -10,8 +10,11 @@ service cloud.firestore {
     //
     // Make sure to write security rules for your app before that time, or else
     // your app will lose access to your Firestore database
-    match /users  {
+    match /users/{user}  {
       allow write: if request.resource.data.role == 'user';
+    }
+    match /posts/{post}{
+      allow list: if request.auth.uid != null;
     }
   }
 }

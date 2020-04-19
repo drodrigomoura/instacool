@@ -2,30 +2,31 @@ import { Dispatch, AnyAction } from "redux"
 import { IServices } from "../services"
 import { firestore } from "firebase"
 
-const START = 'post/fetch-start'
-const SUCCESS = 'post/fetch-success'
-const ERROR = 'post/fetch-error '
+const START = 'posts/fetch-start'
+const SUCCESS = 'posts/fetch-success'
+const ERROR = 'posts/fetch-error '
 
-interface IData {
+export interface IDataPosts {
     [key: string]: {
         comment: string,
         userId: string,
-        createdAt: firestore.Timestamp
+        createdAt: firestore.Timestamp,
+        imageURL: string
     }
 }
 
 const fetchStart = () => ({
-    type: START
+    type: START,
 })
 
-const fetchSuccess = (payload: IData) => ({
-    payload,
+const fetchSuccess = (payload: IDataPosts) => ({
     type: SUCCESS,
+    payload,
 }
 )
 const fetchError = (error: Error) => ({
-    error,
     type: ERROR,
+    error,
 })
 
 
@@ -47,7 +48,7 @@ export default function reducer(state = initialState, action: AnyAction) {
                 ...state,
                 data: action.payload,
                 fetched: true,
-                fetching: true
+                fetching: false
             }
         case ERROR:
             return {
@@ -61,12 +62,37 @@ export default function reducer(state = initialState, action: AnyAction) {
 }
 
 export const fetchPosts = () =>
-    async (dispatch: Dispatch, getState: () => any, { db }: IServices) => {
+    async (dispatch: Dispatch, getState: () => any, { db, storage }: IServices) => {
         dispatch(fetchStart())
         try {
             const snaps = await db.collection('posts').get()
+
             const posts: { [index: string]: any } = {}
             snaps.forEach((x) => posts[x.id] = x.data())
+
+            // console.log(await Promise.all(Object.keys(posts)));
+
+            const imgIds = await Promise.all(Object.keys(posts)
+                .map(async x => {
+                    const ref = storage.ref(`posts/${x}.jpg`)
+                    const url = await ref.getDownloadURL()
+                    console.log(url);
+
+                    return [x, url]
+                }))
+            // console.log(imgIds);
+
+            const keyedImages: { [index: string]: any } = {}
+            imgIds.forEach(x => keyedImages[x[0]] = x[1])
+            // console.log('keyedImages', keyedImages);
+
+            Object.keys(posts).forEach(x => posts[x] = {
+                ...posts[x],
+                imageURL: keyedImages[x]
+            })
+
+            console.log(posts);
+
             dispatch(fetchSuccess(posts))
         } catch (e) {
             dispatch(fetchError(e))
