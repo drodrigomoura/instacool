@@ -1,0 +1,187 @@
+[debug] [2020-04-19T15:03:58.860Z] ----------------------------------------------------------------------
+[debug] [2020-04-19T15:03:58.862Z] Command:       /usr/local/bin/node /home/rodri/.yarn/bin/firebase emulators:start --only functions
+[debug] [2020-04-19T15:03:58.862Z] CLI Version:   8.0.1
+[debug] [2020-04-19T15:03:58.862Z] Platform:      linux
+[debug] [2020-04-19T15:03:58.862Z] Node Version:  v8.13.0
+[debug] [2020-04-19T15:03:58.862Z] Time:          Sun Apr 19 2020 12:03:58 GMT-0300 (-03)
+[debug] [2020-04-19T15:03:58.862Z] ----------------------------------------------------------------------
+[debug] [2020-04-19T15:03:58.862Z] 
+[debug] [2020-04-19T15:03:58.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-19T15:03:58.867Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-04-19T15:03:58.925Z] [hub] writing locator at /tmp/hub-instacool-8eeb8.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[info] ✔  functions: Using node@8 from host.
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions" for Cloud Functions...
+[debug] [2020-04-19T15:03:58.952Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-19T15:03:58.952Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-19T15:03:58.952Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-19T15:03:58.952Z] [worker-~diagnostic~-7eabf3f0-8a88-4a21-b256-7dbeaa5069ea]: Assigning socketPath: /tmp/fire_emu_9965.sock 
+[debug] [2020-04-19T15:03:58.953Z] [worker-~diagnostic~-7eabf3f0-8a88-4a21-b256-7dbeaa5069ea]: BUSY 
+[debug] [2020-04-19T15:03:59.157Z] [runtime-status] [9965] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T15:03:59.159Z] [runtime-status] [9965] Disabled runtime features: undefined 
+[debug] [2020-04-19T15:03:59.161Z] [runtime-status] [9965] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:03:59.161Z] [runtime-status] [9965] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to key.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-19T15:03:59.167Z] [runtime-status] [9965] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T15:03:59.200Z] [runtime-status] [9965] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T15:03:59.201Z] [runtime-status] [9965] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:03:59.203Z] [runtime-status] [9965] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:03:59.203Z] [runtime-status] [9965] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:03:59.203Z] [runtime-status] [9965] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T15:03:59.277Z] [runtime-status] [9965] initializeApp(DEFAULT) {"databaseURL":"https://instacool-8eeb8.firebaseio.com","storageBucket":"instacool-8eeb8.appspot.com","projectId":"instacool-8eeb8","credential":{"implicit":true,"projectId":"instacool-8eeb8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtXqq3HZcHv1Qq\nuekhSbYLBqfchgmzpI6+GRKj8c359KKrS8FH+09Wrv5JJllCHp/Il+hQkbj4B9qo\nD3/ixZwS5W56p7zvKNUiQ8IaMxrJQDUWjRZvfrkHerNRUOJXW2KFJ5nOStvWLco/\nR+xoBtfGSy+KnLeAzcqXYV792GzSiLGGTAq43y5pwgX8QOrYIi3xehfYipPLnfMH\nFxHXanGhIsiP/yvkY7XozEhARVHRDbtGUp+xV011xEu5+T39h6W2KYqT1+V2cTCb\nvnByjnpStwN1SodhKr+Wtx0ja/Is3R1YVGoQfGTS6ukrYuFsbuT+DDGOO9hZcSV3\nhC9m92PNAgMBAAECggEAQKQY6+CtBNb6N1oNCfvVU+Qd53PUnzX+gPORRy5r2cQ0\neMDspn2V1eC2cCjLxALuGZlGJfBHcrde+CWbTb7XVBZWbIYpRFTJrxZrg2BFnv8B\nLFDbqiOqMpc1z95kHiU1JSegSdIQiJmXHKQhCaJvhoBXEAwhwXU5kdrc07ID1TVD\nXrXaeA9Hnpvn60kMe38VjBAO1zQaVcwMdQ4uwf/mfxW48DdYuOqh8wbgk/01zj1y\n9u9QBQVVPL/dikPG8RqJPV0AHk5ibDINcv3kEd46i4xnfkTS+jgP2RYp/aatpRGb\nMIpjGP8qjnb46Se++zcqw4Jq+EmHr1jqIHTea8b4swKBgQDqEQvHhspin0AjXbog\n9Q5tdCuzfdm+pC4C0EzRCmVm3yDrJLI20YlCZEaNxit0QserqxGrzmGerg3S9yRK\nGmKTJYVoaozTSQwY7ddecIfTVYpK4kA+wn/IpB9YTiy20yKPF4LFVMAZnasPsXvT\nitUCoWJVjbvmFwwL5445Q/zg1wKBgQC9nZVcmNJ/nfyo5Yl3wsLyHDP/UMknT/Iz\ng60Sl5Jlpbvm9sRP6xtVgCp7UgZxrdubQp5+PeR+RH4m5Vabwnv/iQ8QCfPcmW9H\niShixN2t6+pDMss+XjcyrEYn2VITeWAz/v/GjDNapipdB23EAZWhhqLNuxD+niRx\nq+w64zV3+wKBgGJqsG1Au7AkDa/RJQXehCZ5hjZ+YCPMnJwKQYJTwLc0cn7sexKZ\noAEOcKwD+xlzSslfsJpwuJMj1CQ0TknqNjBwwltZEcV1HWUN/FR1NGcjvHYoE6NP\n3LLcb2GN3TcyJ4HK/O1D6VHb/aUnl00nPtFQUixu3+arIiGPRznE4HsZAoGAcRd7\n7i533gWsnE/LHdLb0utfV/gnAXt9SZxPrbcZaebfm3GyxLfFJcm7jLHvhf3b7U5e\nmYzwqx7O3wQKE/x7WH22ripBeGFLLa9wlvgz/3el0U6KSjiHU4HMlhfYDCVoa5q7\nkwAr4PUab0HvBeisBhr3Hx1jlXlc4y9XRggd6+ECgYEA3oUHZvxOLlZA51BkCNYd\nK2MCtrxZhcsqH0MBQyDX+xZ3cKzKQR2hCUA/E5Mowm2UHQJMDDTzvWnDexW/hRTr\nBr68DaqP75Q2QNwEVp4rYEzyQCxkaukPy7pN4YV3dB3XmN3/sVfcvB8SZaPg3nqV\nkALAUrrWwIilOql3g0/CbrE=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-px38r@instacool-8eeb8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] ✔  functions[api]: http function initialized (http://localhost:5001/instacool-8eeb8/us-central1/api).
+[info] ✔  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-04-19T15:03:59.464Z] [worker-~diagnostic~-7eabf3f0-8a88-4a21-b256-7dbeaa5069ea]: IDLE 
+[debug] [2020-04-19T15:04:27.448Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-19T15:04:27.448Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-19T15:04:27.449Z] Accepted request GET /instacool-8eeb8/us-central1/api/post --> api
+[debug] [2020-04-19T15:04:27.455Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-19T15:04:27.455Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-19T15:04:27.456Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-19T15:04:27.456Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: Assigning socketPath: /tmp/fire_emu_10014.sock 
+[debug] [2020-04-19T15:04:27.456Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: BUSY 
+[debug] [2020-04-19T15:04:27.691Z] [runtime-status] [10014] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T15:04:27.694Z] [runtime-status] [10014] Disabled runtime features: undefined 
+[debug] [2020-04-19T15:04:27.697Z] [runtime-status] [10014] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:04:27.697Z] [runtime-status] [10014] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to key.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-19T15:04:27.703Z] [runtime-status] [10014] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T15:04:27.742Z] [runtime-status] [10014] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T15:04:27.745Z] [runtime-status] [10014] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:04:27.745Z] [runtime-status] [10014] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:04:27.745Z] [runtime-status] [10014] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:04:27.746Z] [runtime-status] [10014] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T15:04:27.840Z] [runtime-status] [10014] initializeApp(DEFAULT) {"databaseURL":"https://instacool-8eeb8.firebaseio.com","storageBucket":"instacool-8eeb8.appspot.com","projectId":"instacool-8eeb8","credential":{"implicit":true,"projectId":"instacool-8eeb8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtXqq3HZcHv1Qq\nuekhSbYLBqfchgmzpI6+GRKj8c359KKrS8FH+09Wrv5JJllCHp/Il+hQkbj4B9qo\nD3/ixZwS5W56p7zvKNUiQ8IaMxrJQDUWjRZvfrkHerNRUOJXW2KFJ5nOStvWLco/\nR+xoBtfGSy+KnLeAzcqXYV792GzSiLGGTAq43y5pwgX8QOrYIi3xehfYipPLnfMH\nFxHXanGhIsiP/yvkY7XozEhARVHRDbtGUp+xV011xEu5+T39h6W2KYqT1+V2cTCb\nvnByjnpStwN1SodhKr+Wtx0ja/Is3R1YVGoQfGTS6ukrYuFsbuT+DDGOO9hZcSV3\nhC9m92PNAgMBAAECggEAQKQY6+CtBNb6N1oNCfvVU+Qd53PUnzX+gPORRy5r2cQ0\neMDspn2V1eC2cCjLxALuGZlGJfBHcrde+CWbTb7XVBZWbIYpRFTJrxZrg2BFnv8B\nLFDbqiOqMpc1z95kHiU1JSegSdIQiJmXHKQhCaJvhoBXEAwhwXU5kdrc07ID1TVD\nXrXaeA9Hnpvn60kMe38VjBAO1zQaVcwMdQ4uwf/mfxW48DdYuOqh8wbgk/01zj1y\n9u9QBQVVPL/dikPG8RqJPV0AHk5ibDINcv3kEd46i4xnfkTS+jgP2RYp/aatpRGb\nMIpjGP8qjnb46Se++zcqw4Jq+EmHr1jqIHTea8b4swKBgQDqEQvHhspin0AjXbog\n9Q5tdCuzfdm+pC4C0EzRCmVm3yDrJLI20YlCZEaNxit0QserqxGrzmGerg3S9yRK\nGmKTJYVoaozTSQwY7ddecIfTVYpK4kA+wn/IpB9YTiy20yKPF4LFVMAZnasPsXvT\nitUCoWJVjbvmFwwL5445Q/zg1wKBgQC9nZVcmNJ/nfyo5Yl3wsLyHDP/UMknT/Iz\ng60Sl5Jlpbvm9sRP6xtVgCp7UgZxrdubQp5+PeR+RH4m5Vabwnv/iQ8QCfPcmW9H\niShixN2t6+pDMss+XjcyrEYn2VITeWAz/v/GjDNapipdB23EAZWhhqLNuxD+niRx\nq+w64zV3+wKBgGJqsG1Au7AkDa/RJQXehCZ5hjZ+YCPMnJwKQYJTwLc0cn7sexKZ\noAEOcKwD+xlzSslfsJpwuJMj1CQ0TknqNjBwwltZEcV1HWUN/FR1NGcjvHYoE6NP\n3LLcb2GN3TcyJ4HK/O1D6VHb/aUnl00nPtFQUixu3+arIiGPRznE4HsZAoGAcRd7\n7i533gWsnE/LHdLb0utfV/gnAXt9SZxPrbcZaebfm3GyxLfFJcm7jLHvhf3b7U5e\nmYzwqx7O3wQKE/x7WH22ripBeGFLLa9wlvgz/3el0U6KSjiHU4HMlhfYDCVoa5q7\nkwAr4PUab0HvBeisBhr3Hx1jlXlc4y9XRggd6+ECgYEA3oUHZvxOLlZA51BkCNYd\nK2MCtrxZhcsqH0MBQyDX+xZ3cKzKQR2hCUA/E5Mowm2UHQJMDDTzvWnDexW/hRTr\nBr68DaqP75Q2QNwEVp4rYEzyQCxkaukPy7pN4YV3dB3XmN3/sVfcvB8SZaPg3nqV\nkALAUrrWwIilOql3g0/CbrE=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-px38r@instacool-8eeb8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-19T15:04:28.066Z] [runtime-status] [10014] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-19T15:04:28.068Z] [runtime-status] [10014] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-19T15:04:28.068Z] [runtime-status] [10014] Running api in mode HTTPS 
+[debug] [2020-04-19T15:04:28.077Z] [runtime-status] [10014] Attempting to listen to socketPath: /tmp/fire_emu_10014.sock 
+[debug] [2020-04-19T15:04:28.081Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-19T15:04:28.094Z] [runtime-status] [10014] Ephemeral server handling GET request 
+[info] >  sdadsa  {"user":"sdadsa "}
+[debug] [2020-04-19T15:04:28.098Z] [runtime-status] [10014] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-19T15:04:28.105Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: IDLE 
+[debug] [2020-04-19T15:04:28.105Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-19T15:04:50.035Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-19T15:04:50.035Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-19T15:04:50.035Z] Accepted request GET /instacool-8eeb8/us-central1/api/posts --> api
+[debug] [2020-04-19T15:04:50.035Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-19T15:04:50.036Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: Assigning socketPath: /tmp/fire_emu_10014.sock 
+[debug] [2020-04-19T15:04:50.036Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: BUSY 
+[debug] [2020-04-19T15:04:50.038Z] [runtime-status] [10014] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-19T15:04:50.038Z] [runtime-status] [10014] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-19T15:04:50.038Z] [runtime-status] [10014] Running api in mode HTTPS 
+[debug] [2020-04-19T15:04:50.039Z] [runtime-status] [10014] Attempting to listen to socketPath: /tmp/fire_emu_10014.sock 
+[debug] [2020-04-19T15:04:50.039Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-19T15:04:50.044Z] [runtime-status] [10014] Ephemeral server handling GET request 
+[debug] [2020-04-19T15:04:50.045Z] [runtime-status] [10014] Ephemeral server survived. 
+[info] >  sdadsa  {"user":"sdadsa "}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-19T15:04:50.048Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: IDLE 
+[debug] [2020-04-19T15:04:50.049Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-19T15:05:50.905Z] File /home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/src/createServer.ts changed, reloading triggers 
+[debug] [2020-04-19T15:05:51.906Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-19T15:05:51.907Z] [worker-~diagnostic~-7eabf3f0-8a88-4a21-b256-7dbeaa5069ea]: FINISHING 
+[debug] [2020-04-19T15:05:51.908Z] [worker-pool] Shutting down IDLE worker (api) 
+[debug] [2020-04-19T15:05:51.909Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: FINISHING 
+[debug] [2020-04-19T15:05:51.924Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-19T15:05:51.925Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-19T15:05:51.926Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-19T15:05:51.926Z] [worker-~diagnostic~-7ae47c4d-662b-489d-88c2-1b332f07ba54]: Assigning socketPath: /tmp/fire_emu_10094.sock 
+[debug] [2020-04-19T15:05:51.927Z] [worker-~diagnostic~-7ae47c4d-662b-489d-88c2-1b332f07ba54]: BUSY 
+[debug] [2020-04-19T15:05:51.937Z] [worker-~diagnostic~-7eabf3f0-8a88-4a21-b256-7dbeaa5069ea]: exited 
+[debug] [2020-04-19T15:05:51.937Z] [worker-~diagnostic~-7eabf3f0-8a88-4a21-b256-7dbeaa5069ea]: FINISHED 
+[debug] [2020-04-19T15:05:51.937Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: exited 
+[debug] [2020-04-19T15:05:51.938Z] [worker-api-f331b13c-0099-4174-8678-441e1a1f3ab7]: FINISHED 
+[debug] [2020-04-19T15:05:52.444Z] [runtime-status] [10094] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T15:05:52.447Z] [runtime-status] [10094] Disabled runtime features: undefined 
+[debug] [2020-04-19T15:05:52.450Z] [runtime-status] [10094] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:05:52.450Z] [runtime-status] [10094] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to key.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-19T15:05:52.455Z] [runtime-status] [10094] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T15:05:52.489Z] [runtime-status] [10094] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T15:05:52.490Z] [runtime-status] [10094] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:05:52.492Z] [runtime-status] [10094] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:05:52.492Z] [runtime-status] [10094] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:05:52.492Z] [runtime-status] [10094] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T15:05:52.585Z] [runtime-status] [10094] initializeApp(DEFAULT) {"databaseURL":"https://instacool-8eeb8.firebaseio.com","storageBucket":"instacool-8eeb8.appspot.com","projectId":"instacool-8eeb8","credential":{"implicit":true,"projectId":"instacool-8eeb8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtXqq3HZcHv1Qq\nuekhSbYLBqfchgmzpI6+GRKj8c359KKrS8FH+09Wrv5JJllCHp/Il+hQkbj4B9qo\nD3/ixZwS5W56p7zvKNUiQ8IaMxrJQDUWjRZvfrkHerNRUOJXW2KFJ5nOStvWLco/\nR+xoBtfGSy+KnLeAzcqXYV792GzSiLGGTAq43y5pwgX8QOrYIi3xehfYipPLnfMH\nFxHXanGhIsiP/yvkY7XozEhARVHRDbtGUp+xV011xEu5+T39h6W2KYqT1+V2cTCb\nvnByjnpStwN1SodhKr+Wtx0ja/Is3R1YVGoQfGTS6ukrYuFsbuT+DDGOO9hZcSV3\nhC9m92PNAgMBAAECggEAQKQY6+CtBNb6N1oNCfvVU+Qd53PUnzX+gPORRy5r2cQ0\neMDspn2V1eC2cCjLxALuGZlGJfBHcrde+CWbTb7XVBZWbIYpRFTJrxZrg2BFnv8B\nLFDbqiOqMpc1z95kHiU1JSegSdIQiJmXHKQhCaJvhoBXEAwhwXU5kdrc07ID1TVD\nXrXaeA9Hnpvn60kMe38VjBAO1zQaVcwMdQ4uwf/mfxW48DdYuOqh8wbgk/01zj1y\n9u9QBQVVPL/dikPG8RqJPV0AHk5ibDINcv3kEd46i4xnfkTS+jgP2RYp/aatpRGb\nMIpjGP8qjnb46Se++zcqw4Jq+EmHr1jqIHTea8b4swKBgQDqEQvHhspin0AjXbog\n9Q5tdCuzfdm+pC4C0EzRCmVm3yDrJLI20YlCZEaNxit0QserqxGrzmGerg3S9yRK\nGmKTJYVoaozTSQwY7ddecIfTVYpK4kA+wn/IpB9YTiy20yKPF4LFVMAZnasPsXvT\nitUCoWJVjbvmFwwL5445Q/zg1wKBgQC9nZVcmNJ/nfyo5Yl3wsLyHDP/UMknT/Iz\ng60Sl5Jlpbvm9sRP6xtVgCp7UgZxrdubQp5+PeR+RH4m5Vabwnv/iQ8QCfPcmW9H\niShixN2t6+pDMss+XjcyrEYn2VITeWAz/v/GjDNapipdB23EAZWhhqLNuxD+niRx\nq+w64zV3+wKBgGJqsG1Au7AkDa/RJQXehCZ5hjZ+YCPMnJwKQYJTwLc0cn7sexKZ\noAEOcKwD+xlzSslfsJpwuJMj1CQ0TknqNjBwwltZEcV1HWUN/FR1NGcjvHYoE6NP\n3LLcb2GN3TcyJ4HK/O1D6VHb/aUnl00nPtFQUixu3+arIiGPRznE4HsZAoGAcRd7\n7i533gWsnE/LHdLb0utfV/gnAXt9SZxPrbcZaebfm3GyxLfFJcm7jLHvhf3b7U5e\nmYzwqx7O3wQKE/x7WH22ripBeGFLLa9wlvgz/3el0U6KSjiHU4HMlhfYDCVoa5q7\nkwAr4PUab0HvBeisBhr3Hx1jlXlc4y9XRggd6+ECgYEA3oUHZvxOLlZA51BkCNYd\nK2MCtrxZhcsqH0MBQyDX+xZ3cKzKQR2hCUA/E5Mowm2UHQJMDDTzvWnDexW/hRTr\nBr68DaqP75Q2QNwEVp4rYEzyQCxkaukPy7pN4YV3dB3XmN3/sVfcvB8SZaPg3nqV\nkALAUrrWwIilOql3g0/CbrE=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-px38r@instacool-8eeb8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-19T15:05:52.925Z] [worker-~diagnostic~-7ae47c4d-662b-489d-88c2-1b332f07ba54]: IDLE 
+[debug] [2020-04-19T15:06:24.293Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-19T15:06:24.293Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-19T15:06:24.293Z] Accepted request GET /instacool-8eeb8/us-central1/api/posts --> api
+[debug] [2020-04-19T15:06:24.293Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-19T15:06:24.294Z] [worker-pool] Cleaned up workers for api: 1 --> 0 
+[debug] [2020-04-19T15:06:24.308Z] [worker-pool] addWorker(api) 
+[debug] [2020-04-19T15:06:24.308Z] [worker-pool] Adding worker with key api, total=1 
+[debug] [2020-04-19T15:06:24.308Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-19T15:06:24.309Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: Assigning socketPath: /tmp/fire_emu_10148.sock 
+[debug] [2020-04-19T15:06:24.309Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: BUSY 
+[debug] [2020-04-19T15:06:25.155Z] [runtime-status] [10148] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T15:06:25.159Z] [runtime-status] [10148] Disabled runtime features: undefined 
+[debug] [2020-04-19T15:06:25.162Z] [runtime-status] [10148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:06:25.167Z] [runtime-status] [10148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to key.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-04-19T15:06:25.175Z] [runtime-status] [10148] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T15:06:25.239Z] [runtime-status] [10148] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T15:06:25.240Z] [runtime-status] [10148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:06:25.242Z] [runtime-status] [10148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T15:06:25.242Z] [runtime-status] [10148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T15:06:25.242Z] [runtime-status] [10148] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T15:06:25.360Z] [runtime-status] [10148] initializeApp(DEFAULT) {"databaseURL":"https://instacool-8eeb8.firebaseio.com","storageBucket":"instacool-8eeb8.appspot.com","projectId":"instacool-8eeb8","credential":{"implicit":true,"projectId":"instacool-8eeb8","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtXqq3HZcHv1Qq\nuekhSbYLBqfchgmzpI6+GRKj8c359KKrS8FH+09Wrv5JJllCHp/Il+hQkbj4B9qo\nD3/ixZwS5W56p7zvKNUiQ8IaMxrJQDUWjRZvfrkHerNRUOJXW2KFJ5nOStvWLco/\nR+xoBtfGSy+KnLeAzcqXYV792GzSiLGGTAq43y5pwgX8QOrYIi3xehfYipPLnfMH\nFxHXanGhIsiP/yvkY7XozEhARVHRDbtGUp+xV011xEu5+T39h6W2KYqT1+V2cTCb\nvnByjnpStwN1SodhKr+Wtx0ja/Is3R1YVGoQfGTS6ukrYuFsbuT+DDGOO9hZcSV3\nhC9m92PNAgMBAAECggEAQKQY6+CtBNb6N1oNCfvVU+Qd53PUnzX+gPORRy5r2cQ0\neMDspn2V1eC2cCjLxALuGZlGJfBHcrde+CWbTb7XVBZWbIYpRFTJrxZrg2BFnv8B\nLFDbqiOqMpc1z95kHiU1JSegSdIQiJmXHKQhCaJvhoBXEAwhwXU5kdrc07ID1TVD\nXrXaeA9Hnpvn60kMe38VjBAO1zQaVcwMdQ4uwf/mfxW48DdYuOqh8wbgk/01zj1y\n9u9QBQVVPL/dikPG8RqJPV0AHk5ibDINcv3kEd46i4xnfkTS+jgP2RYp/aatpRGb\nMIpjGP8qjnb46Se++zcqw4Jq+EmHr1jqIHTea8b4swKBgQDqEQvHhspin0AjXbog\n9Q5tdCuzfdm+pC4C0EzRCmVm3yDrJLI20YlCZEaNxit0QserqxGrzmGerg3S9yRK\nGmKTJYVoaozTSQwY7ddecIfTVYpK4kA+wn/IpB9YTiy20yKPF4LFVMAZnasPsXvT\nitUCoWJVjbvmFwwL5445Q/zg1wKBgQC9nZVcmNJ/nfyo5Yl3wsLyHDP/UMknT/Iz\ng60Sl5Jlpbvm9sRP6xtVgCp7UgZxrdubQp5+PeR+RH4m5Vabwnv/iQ8QCfPcmW9H\niShixN2t6+pDMss+XjcyrEYn2VITeWAz/v/GjDNapipdB23EAZWhhqLNuxD+niRx\nq+w64zV3+wKBgGJqsG1Au7AkDa/RJQXehCZ5hjZ+YCPMnJwKQYJTwLc0cn7sexKZ\noAEOcKwD+xlzSslfsJpwuJMj1CQ0TknqNjBwwltZEcV1HWUN/FR1NGcjvHYoE6NP\n3LLcb2GN3TcyJ4HK/O1D6VHb/aUnl00nPtFQUixu3+arIiGPRznE4HsZAoGAcRd7\n7i533gWsnE/LHdLb0utfV/gnAXt9SZxPrbcZaebfm3GyxLfFJcm7jLHvhf3b7U5e\nmYzwqx7O3wQKE/x7WH22ripBeGFLLa9wlvgz/3el0U6KSjiHU4HMlhfYDCVoa5q7\nkwAr4PUab0HvBeisBhr3Hx1jlXlc4y9XRggd6+ECgYEA3oUHZvxOLlZA51BkCNYd\nK2MCtrxZhcsqH0MBQyDX+xZ3cKzKQR2hCUA/E5Mowm2UHQJMDDTzvWnDexW/hRTr\nBr68DaqP75Q2QNwEVp4rYEzyQCxkaukPy7pN4YV3dB3XmN3/sVfcvB8SZaPg3nqV\nkALAUrrWwIilOql3g0/CbrE=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-px38r@instacool-8eeb8.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-04-19T15:06:25.714Z] [runtime-status] [10148] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-19T15:06:25.714Z] [runtime-status] [10148] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-19T15:06:25.715Z] [runtime-status] [10148] Running api in mode HTTPS 
+[debug] [2020-04-19T15:06:25.721Z] [runtime-status] [10148] Attempting to listen to socketPath: /tmp/fire_emu_10148.sock 
+[debug] [2020-04-19T15:06:25.724Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-19T15:06:25.734Z] [runtime-status] [10148] Ephemeral server handling GET request 
+[info] >  sdadsa  {"user":"sdadsa "}
+[debug] [2020-04-19T15:06:25.740Z] [runtime-status] [10148] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-19T15:06:25.751Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: IDLE 
+[debug] [2020-04-19T15:06:25.751Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-19T15:06:48.361Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-19T15:06:48.361Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-19T15:06:48.361Z] Accepted request GET /instacool-8eeb8/us-central1/api/posts --> api
+[debug] [2020-04-19T15:06:48.361Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-19T15:06:48.361Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: Assigning socketPath: /tmp/fire_emu_10148.sock 
+[debug] [2020-04-19T15:06:48.362Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: BUSY 
+[debug] [2020-04-19T15:06:48.363Z] [runtime-status] [10148] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-19T15:06:48.365Z] [runtime-status] [10148] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-19T15:06:48.365Z] [runtime-status] [10148] Running api in mode HTTPS 
+[debug] [2020-04-19T15:06:48.365Z] [runtime-status] [10148] Attempting to listen to socketPath: /tmp/fire_emu_10148.sock 
+[debug] [2020-04-19T15:06:48.366Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-19T15:06:48.371Z] [runtime-status] [10148] Ephemeral server handling GET request 
+[debug] [2020-04-19T15:06:48.371Z] [runtime-status] [10148] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-19T15:06:48.371Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: IDLE 
+[debug] [2020-04-19T15:06:48.372Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  sdadsa  {"user":"sdadsa "}
+[debug] [2020-04-19T15:06:58.993Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-19T15:06:58.993Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-19T15:06:58.993Z] Accepted request GET /instacool-8eeb8/us-central1/api/posts --> api
+[debug] [2020-04-19T15:06:58.993Z] [worker-pool] submitWork(triggerId=api) 
+[debug] [2020-04-19T15:06:58.993Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: Assigning socketPath: /tmp/fire_emu_10148.sock 
+[debug] [2020-04-19T15:06:58.993Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: BUSY 
+[debug] [2020-04-19T15:06:58.995Z] [runtime-status] [10148] Trigger "api" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-19T15:06:58.995Z] [runtime-status] [10148] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
+[debug] [2020-04-19T15:06:58.995Z] [runtime-status] [10148] Running api in mode HTTPS 
+[debug] [2020-04-19T15:06:58.995Z] [runtime-status] [10148] Attempting to listen to socketPath: /tmp/fire_emu_10148.sock 
+[debug] [2020-04-19T15:06:58.996Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-19T15:06:59.003Z] [runtime-status] [10148] Ephemeral server handling GET request 
+[debug] [2020-04-19T15:06:59.003Z] [runtime-status] [10148] Ephemeral server survived. 
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-19T15:06:59.004Z] [worker-api-8f0c6b90-c5f9-4c9e-be1b-83c3feefe6c9]: IDLE 
+[debug] [2020-04-19T15:06:59.004Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  sdadsa  {"user":"sdadsa "}
