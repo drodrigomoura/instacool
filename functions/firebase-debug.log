@@ -111,3 +111,69 @@
 [debug] [2020-04-19T14:27:35.394Z] [runtime-status] [5734] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
 [debug] [2020-04-19T14:27:35.395Z] [runtime-status] [5734] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
 [debug] [2020-04-19T14:27:35.439Z] [worker-~diagnostic~-8be83ea4-8a2a-475f-9a80-f8b78464d42b]: IDLE 
+[debug] [2020-04-19T14:32:54.084Z] File /home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/package.json changed, reloading triggers 
+[debug] [2020-04-19T14:32:55.085Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-19T14:32:55.086Z] [worker-~diagnostic~-8be83ea4-8a2a-475f-9a80-f8b78464d42b]: FINISHING 
+[debug] [2020-04-19T14:32:55.087Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-19T14:32:55.111Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-19T14:32:55.111Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-19T14:32:55.112Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-19T14:32:55.112Z] [worker-~diagnostic~-91a2b3f7-9f42-4868-b606-ad86f7351cfe]: Assigning socketPath: /tmp/fire_emu_6224.sock 
+[debug] [2020-04-19T14:32:55.113Z] [worker-~diagnostic~-91a2b3f7-9f42-4868-b606-ad86f7351cfe]: BUSY 
+[debug] [2020-04-19T14:32:55.118Z] [worker-~diagnostic~-8be83ea4-8a2a-475f-9a80-f8b78464d42b]: exited 
+[debug] [2020-04-19T14:32:55.119Z] [worker-~diagnostic~-8be83ea4-8a2a-475f-9a80-f8b78464d42b]: FINISHED 
+[debug] [2020-04-19T14:32:55.370Z] [runtime-status] [6224] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T14:32:55.373Z] [runtime-status] [6224] Disabled runtime features: undefined 
+[debug] [2020-04-19T14:32:55.376Z] [runtime-status] [6224] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T14:32:55.376Z] [runtime-status] [6224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:32:55.381Z] [runtime-status] [6224] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T14:32:55.410Z] [runtime-status] [6224] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T14:32:55.413Z] [runtime-status] [6224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:32:55.413Z] [runtime-status] [6224] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T14:32:55.413Z] [runtime-status] [6224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:32:55.413Z] [runtime-status] [6224] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T14:32:55.497Z] [worker-~diagnostic~-91a2b3f7-9f42-4868-b606-ad86f7351cfe]: IDLE 
+[debug] [2020-04-19T14:34:55.542Z] File /home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/src/createServer.ts changed, reloading triggers 
+[debug] [2020-04-19T14:34:56.545Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-19T14:34:56.546Z] [worker-~diagnostic~-91a2b3f7-9f42-4868-b606-ad86f7351cfe]: FINISHING 
+[debug] [2020-04-19T14:34:56.546Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-19T14:34:56.554Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-19T14:34:56.554Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-19T14:34:56.554Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-19T14:34:56.554Z] [worker-~diagnostic~-86a10cc4-73df-40f3-b0aa-90a5bcf120ae]: Assigning socketPath: /tmp/fire_emu_6330.sock 
+[debug] [2020-04-19T14:34:56.554Z] [worker-~diagnostic~-86a10cc4-73df-40f3-b0aa-90a5bcf120ae]: BUSY 
+[debug] [2020-04-19T14:34:56.556Z] [worker-~diagnostic~-91a2b3f7-9f42-4868-b606-ad86f7351cfe]: exited 
+[debug] [2020-04-19T14:34:56.556Z] [worker-~diagnostic~-91a2b3f7-9f42-4868-b606-ad86f7351cfe]: FINISHED 
+[debug] [2020-04-19T14:34:56.780Z] [runtime-status] [6330] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T14:34:56.782Z] [runtime-status] [6330] Disabled runtime features: undefined 
+[debug] [2020-04-19T14:34:56.784Z] [runtime-status] [6330] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T14:34:56.786Z] [runtime-status] [6330] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:34:56.790Z] [runtime-status] [6330] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T14:34:56.818Z] [runtime-status] [6330] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T14:34:56.820Z] [runtime-status] [6330] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:34:56.821Z] [runtime-status] [6330] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T14:34:56.821Z] [runtime-status] [6330] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:34:56.821Z] [runtime-status] [6330] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T14:34:56.866Z] [worker-~diagnostic~-86a10cc4-73df-40f3-b0aa-90a5bcf120ae]: IDLE 
+[debug] [2020-04-19T14:35:28.127Z] File /home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/src/createServer.ts changed, reloading triggers 
+[debug] [2020-04-19T14:35:29.127Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-19T14:35:29.127Z] [worker-~diagnostic~-86a10cc4-73df-40f3-b0aa-90a5bcf120ae]: FINISHING 
+[debug] [2020-04-19T14:35:29.127Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-19T14:35:29.141Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-19T14:35:29.141Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-19T14:35:29.141Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-19T14:35:29.144Z] [worker-~diagnostic~-e42d3604-ef3b-48d9-9113-11c1de76c639]: Assigning socketPath: /tmp/fire_emu_6387.sock 
+[debug] [2020-04-19T14:35:29.144Z] [worker-~diagnostic~-e42d3604-ef3b-48d9-9113-11c1de76c639]: BUSY 
+[debug] [2020-04-19T14:35:29.146Z] [worker-~diagnostic~-86a10cc4-73df-40f3-b0aa-90a5bcf120ae]: exited 
+[debug] [2020-04-19T14:35:29.147Z] [worker-~diagnostic~-86a10cc4-73df-40f3-b0aa-90a5bcf120ae]: FINISHED 
+[debug] [2020-04-19T14:35:29.861Z] [runtime-status] [6387] Functions runtime initialized. {"cwd":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions","node_version":"8.13.0"} 
+[debug] [2020-04-19T14:35:29.864Z] [runtime-status] [6387] Disabled runtime features: undefined 
+[debug] [2020-04-19T14:35:29.871Z] [runtime-status] [6387] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T14:35:29.877Z] [runtime-status] [6387] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:35:29.887Z] [runtime-status] [6387] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-19T14:35:30.018Z] [runtime-status] [6387] Checked functions.config() {"config":{}} 
+[debug] [2020-04-19T14:35:30.026Z] [runtime-status] [6387] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:35:30.027Z] [runtime-status] [6387] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-19T14:35:30.027Z] [runtime-status] [6387] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-19T14:35:30.027Z] [runtime-status] [6387] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/home/rodri/Desktop/ReactJS/UDEMY/3 HolaMundo/4 React, Redux, TypeScript, Firebase - Fullstack Serveless/instacool/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-19T14:35:30.295Z] [worker-~diagnostic~-e42d3604-ef3b-48d9-9113-11c1de76c639]: IDLE 
