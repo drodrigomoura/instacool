@@ -98,3 +98,14 @@ export const fetchPosts = () =>
             dispatch(fetchError(e))
         }
     }
+
+export const like = (id: string) =>
+    async (dispatch: Dispatch, getState: () => any, { }: IServices) => {
+        console.log(id);
+
+    }
+
+export const share = (id: string) =>
+    async (dispatch: Dispatch, getState: () => any, { }: IServices) => {
+        console.log(id);
+    }
