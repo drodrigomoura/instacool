@@ -12,8 +12,6 @@ export default () => {
     const app = express()
     app.use(async (req, res, next) => {
         const token = (req.headers.authorization) ? req.headers.authorization : '' //tuve que agregar esto porque no me permitia asignar directamente algo undefined, entonces me aseguro de que se asigne el token o sino un string vacio
-        console.log('sdadsa', token);
-
         try {
             const { uid, email } = await auth.verifyIdToken(token)
             const snap = await db.collection('users').doc(uid).get()
@@ -31,7 +29,7 @@ export default () => {
         }
     })
 
-    app.get('/post', (req, res) => {
+    app.get('/posts', (req, res) => {
 
         res.send("Hola mundo desde express")
     })
