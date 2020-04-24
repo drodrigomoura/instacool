@@ -8,13 +8,14 @@ const SUCCESS = 'posts/fetch-success'
 const ERROR = 'posts/fetch-error'
 const ADD = 'posts/add'
 
+export interface IPost {
+    comment: string,
+    userId: string,
+    createdAt: firestore.Timestamp,
+    imageURL: string
+}
 export interface IDataPosts {
-    [key: string]: {
-        comment: string,
-        userId: string,
-        createdAt: firestore.Timestamp,
-        imageURL: string
-    }
+    [key: string]: IPost
 }
 
 const fetchStart = () => ({
@@ -92,7 +93,6 @@ export const fetchPosts = () =>
 
                     return [x, url]
                 }))
-            // console.log(imgIds);
 
             const keyedImages: { [index: string]: any } = {}
             imgIds.forEach(x => keyedImages[x[0]] = x[1])
@@ -131,13 +131,17 @@ export const share = (id: string) =>
                 authorization: token
             }
         })
+
         const url = await storage.ref(`posts/${id}.jpg`).getDownloadURL()
-        const blob = await download(url)
+        const blob = await download(url) as Blob
+
         const { id: postId }: { id: string } = await result.json()
         const ref = storage.ref(`posts/${postId}.jpg`)
-        if (blob instanceof Blob) await ref.put(blob) //solucon para problema Type unknown is not assignable to type ArrayBuffer
+
+        await ref.put(blob)
         const imageURL = await ref.getDownloadURL()
         const snap = await db.collection('posts').doc(postId).get()
+
         dispatch(add({
             [snap.id]: {
                 ...snap.data(),
