@@ -19,6 +19,9 @@ const style = {
         display: 'flex',
         justifyContent: 'space-between',
         marginBottom: '10px'
+    },
+    img: {
+        width: '100px'
     }
 }
 
@@ -40,22 +43,22 @@ class Profile extends React.Component<IProfileProps> {
         fetchPosts()
     }
     public render() {
+        const { data } = this.props
         return (
             <div style={style.container}>
                 <div style={style.row}>
                     <ProfileImg />
                     <Button>Agregar</Button>
                 </div>
-                <div style={style.row}>
-                    <Card><img src='http://placekitten.com/100/100' alt='img' /></Card>
-                    <Card><img src='http://placekitten.com/100/100' alt='img' /></Card>
-                    <Card><img src='http://placekitten.com/100/100' alt='img' /></Card>
-                </div>
-                <div style={style.row}>
-                    <Card><img src='http://placekitten.com/100/100' alt='img' /></Card>
-                    <Card><img src='http://placekitten.com/100/100' alt='img' /></Card>
-                    <Card><img src='http://placekitten.com/100/100' alt='img' /></Card>
-                </div>
+                {data.map((x, i) =>
+                    <div key={i} style={style.row}>
+                        {x.map(y =>
+                            <Card><img src={y.imageURL} style={style.img} alt='img' /></Card>
+                        )}
+                    </div>
+                )}
+
+
             </div>
 
         )
