@@ -75,6 +75,12 @@ export default () => {
             createdAt: new Date()
         })
 
+        await db.collection('shares').doc().set({
+            userId: uid,
+            postId,
+            createdAt: new Date()
+        })
+
         res.send({ id: result.id })
     })
 
