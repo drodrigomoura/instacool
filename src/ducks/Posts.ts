@@ -80,7 +80,7 @@ export const fetchPosts = () =>
     async (dispatch: Dispatch, getState: () => any, { db, storage }: IServices) => {
         dispatch(fetchStart())
         try {
-            const snaps = await db.collection('posts').get()  //.orderBy('createdAt', 'desc').get()
+            const snaps = await db.collection('posts').orderBy('createdAt', 'desc').get()
             const posts: { [index: string]: any } = {}
             snaps.forEach((x) => posts[x.id] = x.data())
 
