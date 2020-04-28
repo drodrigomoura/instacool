@@ -8,6 +8,7 @@ import { bindActionCreators } from 'redux'
 import { ThunkDispatch } from 'redux-thunk'
 import services from '../../services'
 import { chunk } from 'lodash'
+import { submit } from 'redux-form'
 
 const { auth } = services
 
@@ -28,6 +29,7 @@ const style = {
 
 interface IProfileProps {
     fetchPosts: () => void,
+    submitProfileImg: () => void,
     fetched: boolean,
     loading: boolean,
     data: postsDuck.IPost[][]
@@ -43,11 +45,11 @@ class Profile extends React.Component<IProfileProps> {
         fetchPosts()
     }
     public render() {
-        const { data } = this.props
+        const { data, submitProfileImg } = this.props
         return (
             <div style={style.container}>
                 <div style={style.row}>
-                    <ProfileImg />
+                    <ProfileImg submitProfileImg={submitProfileImg} />
                     <Button>Agregar</Button>
                 </div>
                 {data.map((x, i) =>
@@ -86,6 +88,9 @@ const mapStateToProps = (state: any) => {
     }
 }
 
-const mapDispatchToProps = (dispatch: ThunkDispatch<any, any, any>) => bindActionCreators(postsDuck, dispatch)
+const mapDispatchToProps = (dispatch: ThunkDispatch<any, any, any>) => bindActionCreators({
+    ...postsDuck,
+    submitProfileImg: () => submit('profileImg')
+}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile)
