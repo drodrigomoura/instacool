@@ -10,12 +10,12 @@ const style = {
     },
 }
 
-const handleChange = (submitProfileImg: () => void, input: WrappedFieldInputProps) => (e: React.ChangeEvent<HTMLInputElement>) => {
+const handleChange = (submitProfileImg: () => void, input: WrappedFieldInputProps) => async (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
     const { onChange } = input
     const { files } = e.target
     if (files) {
-        onChange(files[0])
+        await onChange(files[0])
         submitProfileImg()
     }
 }
