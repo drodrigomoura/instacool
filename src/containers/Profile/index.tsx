@@ -29,7 +29,7 @@ const style = {
 interface IProfileProps {
   fetchPosts: () => void;
   submitProfileImg: () => void;
-  handleProfileImageSubmit: (a: { file: File }) => void;
+  handleProfileImageSubmit: (a: any) => void; //{ file: File } puse any porque con esto no funciona
   fetched: boolean;
   loading: boolean;
   data: postsDuck.IPost[][];

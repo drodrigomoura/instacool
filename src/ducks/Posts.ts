@@ -167,9 +167,6 @@ export const share = (id: string) => async (
 };
 
 export const handleProfileImageSubmit = (payload: { file: File }) => (
-  dispatch: Dispatch,
-  getState: () => any,
-  {}: IServices
-) => {
+  dispatch: Dispatch, getState: () => any, { }: IServices) => {
   console.log(payload);
 };
