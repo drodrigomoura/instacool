@@ -1,13 +1,30 @@
-import { Dispatch } from "redux"
+import { Dispatch, AnyAction } from "redux"
 import { IServices } from '../services'
+
+const SET_PROFILE_IMAGE = 'users/set-profile-image'
+
+export const setProfileImage = (payload: string) => ({
+    payload,
+    type: SET_PROFILE_IMAGE
+})
 
 export interface ILogin {
     email: string,
     password: string
 }
 
-export default function reducer(state = {}) {
-    return state
+export default function reducer(state = {}, action: AnyAction) {
+    switch (action.type) {
+        case SET_PROFILE_IMAGE: {
+            return {
+                ...state,
+                profileImage: action.payload
+            }
+        }
+        default: {
+            return state
+        }
+    }
 }
 
 export const login = ({ email, password }: ILogin) =>

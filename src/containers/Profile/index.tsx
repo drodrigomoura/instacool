@@ -32,6 +32,7 @@ interface IProfileProps {
   handleProfileImageSubmit: (a: any) => void; //{ file: File } puse any porque con esto no funciona
   fetched: boolean;
   loading: boolean;
+  profileImage: string,
   data: postsDuck.IPost[][];
 }
 
@@ -45,11 +46,12 @@ class Profile extends React.Component<IProfileProps> {
     fetchPosts();
   }
   public render() {
-    const { data, submitProfileImg, handleProfileImageSubmit } = this.props;
+    const { data, submitProfileImg, handleProfileImageSubmit, profileImage } = this.props;
     return (
       <div style={style.container}>
         <div style={style.row}>
           <ProfileImg
+            profileImage={profileImage}
             onSubmit={handleProfileImageSubmit}
             submitProfileImg={submitProfileImg}
           />
@@ -72,10 +74,10 @@ class Profile extends React.Component<IProfileProps> {
 const mapStateToProps = (state: any) => {
   console.log("mapstatetoprops", state);
 
-  const {
-    Post: { data, fetching, fetched },
-  } = state;
+  const { Post: { data, fetching, fetched } } = state;
+  const { Users: { profileImage: tempPI } } = state;
   const loading = fetching || !fetched;
+  const profileImage = tempPI || 'http://placekitten.com/100/100'
   console.log(auth.currentUser && auth.currentUser.uid);
 
   const filtered = Object.keys(data).reduce((acc, el) => {
@@ -89,6 +91,7 @@ const mapStateToProps = (state: any) => {
     data: chunk(filtered, 3),
     fetched,
     loading,
+    profileImage
   };
 };
 

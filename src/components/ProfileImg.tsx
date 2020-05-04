@@ -7,6 +7,8 @@ const style = {
     },
     img: {
         borderRadius: '100%',
+        width: '100px',
+        height: '100px'
     },
 }
 
@@ -21,23 +23,29 @@ const handleChange = (submitProfileImg: () => void, input: WrappedFieldInputProp
 }
 
 interface IProfileImg {
-    submitProfileImg: () => void
+    submitProfileImg: () => void,
+    profileImage: string
 }
 
-const RenderField: React.StatelessComponent<WrappedFieldProps & IProfileImg> = ({ input, submitProfileImg }) =>
+const RenderField: React.StatelessComponent<WrappedFieldProps & IProfileImg> = ({ input, submitProfileImg, profileImage }) =>
     <div>
         <input onChange={handleChange(submitProfileImg, input)} style={style.file} type='file' id='profileImage' />
         <label htmlFor='profileImage'>
-            <img style={style.img} src='http://placekitten.com/100/100' alt="profile img" />
+            <img style={style.img} src={profileImage} alt="profile img" />
         </label>
     </div>
 
 class ProfileImg extends React.Component<InjectedFormProps<{}, IProfileImg> & IProfileImg> {
     public render() {
-        const { handleSubmit, submitProfileImg } = this.props
+        const { handleSubmit, submitProfileImg, profileImage } = this.props
         return (
             <form onSubmit={handleSubmit}>
-                <Field name='file' component={RenderField} submitProfileImg={submitProfileImg} />
+                <Field
+                    profileImage={profileImage}
+                    name='file'
+                    component={RenderField}
+                    submitProfileImg={submitProfileImg}
+                />
 
             </form>
         )
