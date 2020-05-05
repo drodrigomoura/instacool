@@ -14,6 +14,7 @@ import App from './App';
 import * as reducers from './ducks'
 import * as serviceWorker from './serviceWorker';
 import services from './services'
+import { loadUserInitialData } from './ducks/Users'
 
 
 const store = createStore(combineReducers({
@@ -21,12 +22,13 @@ const store = createStore(combineReducers({
   form: formReducer,
 }), applyMiddleware(thunk.withExtraArgument(services)))
 
+const loadInitialData = () => store.dispatch(loadUserInitialData)
 const history = createBrowserHistory()
 
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <App history={history} />
+      <App loadInitialData={loadInitialData} history={history} />
     </Router>
   </Provider>,
   document.getElementById('root')

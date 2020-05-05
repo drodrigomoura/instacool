@@ -13,6 +13,7 @@ import services from './services'
 
 interface IAppProps {
   history: History,
+  loadInitialData: () => void
 }
 
 class App extends React.Component<IAppProps> {
@@ -22,8 +23,11 @@ class App extends React.Component<IAppProps> {
 
   public componentDidMount() {
     const { auth } = services
+
     auth.onAuthStateChanged(user => {
+      const { loadInitialData } = this.props
       if (user) {
+        loadInitialData()
         /* eslint no-restricted-globals:0 */
         if (['/', '/register'].indexOf(location.pathname) > -1) {
           const { history } = this.props

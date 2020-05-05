@@ -39,3 +39,8 @@ export const register = ({ email, password }: ILogin) =>
         const doc = db.collection('users').doc(id)
         await doc.set({ role: 'user' })
     }
+
+export const loadUserInitialData = () =>
+    async (dispatch: Dispatch, getState: () => any, { auth }: IServices) => {
+        console.log('rodri'); //no imprime en consola
+    }
