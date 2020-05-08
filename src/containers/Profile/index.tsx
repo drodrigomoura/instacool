@@ -60,7 +60,7 @@ class Profile extends React.Component<IProfileProps> {
         {data.map((x, i) => (
           <div key={i} style={style.row}>
             {x.map((y) => (
-              <Card>
+              <Card key={y.imageURL}>
                 <img src={y.imageURL} style={style.img} alt="img" />
               </Card>
             ))}
