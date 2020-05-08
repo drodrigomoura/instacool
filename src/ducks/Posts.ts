@@ -94,7 +94,7 @@ export const fetchPosts = () => async (
       Object.keys(posts).map(async (x) => {
         const ref = storage.ref(`posts/${x}.jpg`);
         const url = await ref.getDownloadURL();
-        console.log(url);
+        //  console.log(url);
 
         return [x, url];
       })
@@ -112,7 +112,7 @@ export const fetchPosts = () => async (
         })
     );
 
-    console.log(posts);
+    // console.log(posts);
 
     dispatch(fetchSuccess(posts));
   } catch (e) {

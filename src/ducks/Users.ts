@@ -41,6 +41,16 @@ export const register = ({ email, password }: ILogin) =>
     }
 
 export const loadUserInitialData = () =>
-    async (dispatch: Dispatch, getState: () => any, { auth }: IServices) => {
-        console.log('rodri'); //no imprime en consola
+    async (dispatch: Dispatch, getState: () => any, { storage, auth }: IServices) => {
+        if (!auth.currentUser) {
+            return
+        }
+        const storageRef = storage.ref()
+        const { uid } = auth.currentUser
+        const imageRef = storageRef
+            .child('profileImages')
+            .child(`${uid}.jpg`)
+        const url = await imageRef.getDownloadURL()
+        dispatch(setProfileImage(url))
+        //no se dispatcha esto al parecer
     }
