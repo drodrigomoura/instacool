@@ -22,7 +22,7 @@ const store = createStore(combineReducers({
   form: formReducer,
 }), applyMiddleware(thunk.withExtraArgument(services)))
 
-const loadInitialData = () => store.dispatch(loadUserInitialData)
+const loadInitialData = () => store.dispatch(loadUserInitialData())
 const history = createBrowserHistory()
 
 ReactDOM.render(

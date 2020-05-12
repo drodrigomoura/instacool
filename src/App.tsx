@@ -25,8 +25,8 @@ class App extends React.Component<IAppProps> {
     const { auth } = services
 
     auth.onAuthStateChanged(user => {
-      const { loadInitialData } = this.props
       if (user) {
+        const { loadInitialData } = this.props
         loadInitialData()
         /* eslint no-restricted-globals:0 */
         if (['/', '/register'].indexOf(location.pathname) > -1) {

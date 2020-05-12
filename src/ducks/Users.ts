@@ -52,5 +52,6 @@ export const loadUserInitialData = () =>
             .child(`${uid}.jpg`)
         const url = await imageRef.getDownloadURL()
         dispatch(setProfileImage(url))
-        //no se dispatcha esto al parecer
+        console.log('dsad');
+
     }
