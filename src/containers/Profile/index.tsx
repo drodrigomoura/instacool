@@ -11,6 +11,7 @@ import { ThunkDispatch } from "redux-thunk";
 import services from "../../services";
 import { chunk } from "lodash";
 import { submit } from "redux-form";
+import { IState } from "../../ducks";
 
 const { auth } = services;
 
@@ -73,14 +74,11 @@ class Profile extends React.Component<IProfileProps> {
   }
 }
 
-const mapStateToProps = (state: any) => {
-  //  console.log("mapstatetoprops", state);
-
+const mapStateToProps = (state: IState) => {
   const { Post: { data, fetching, fetched } } = state;
-  const { Users: { profileImage: tempPI } } = state;
+  const { User: { profileImage: tempPI } } = state;
   const loading = fetching || !fetched;
   const profileImage = tempPI || 'http://placekitten.com/100/100'
-  // console.log(auth.currentUser && auth.currentUser.uid);
 
   const filtered = Object.keys(data).reduce((acc, el) => {
     if (data[el].userId !== (auth.currentUser && auth.currentUser.uid)) {

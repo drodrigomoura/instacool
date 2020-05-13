@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { ThunkDispatch } from 'redux-thunk'
 import { bindActionCreators } from 'redux'
 import * as postsDuck from '../../ducks/Posts'
+import { IState } from '../../ducks'
 
 interface INewsfeedProps {
     fetchPosts: () => void,
@@ -51,9 +52,7 @@ class NewsFeed extends React.Component<INewsfeedProps> {
     }
 }
 
-const mapStateToProps = (state: any) => {
-    console.log('mapstatetoprops', state);
-
+const mapStateToProps = (state: IState) => {
     const { Post: { data, fetching, fetched } } = state
     const loading = fetching || !fetched
     return {
