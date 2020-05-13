@@ -3,6 +3,8 @@ import ProfileImg from "../../components/ProfileImg";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
 import * as postsDuck from "../../ducks/Posts";
+import * as usersDuck from "../../ducks/Users";
+
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { ThunkDispatch } from "redux-thunk";
@@ -99,6 +101,7 @@ const mapDispatchToProps = (dispatch: ThunkDispatch<any, any, any>) =>
   bindActionCreators(
     {
       ...postsDuck,
+      ...usersDuck,
       submitProfileImg: () => submit("profileImg"),
     },
     dispatch

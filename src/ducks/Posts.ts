@@ -2,7 +2,6 @@ import { Dispatch, AnyAction } from "redux";
 import { IServices } from "../services";
 import { firestore } from "firebase";
 import { download } from "../utils";
-import { setProfileImage } from './Users'
 
 const START = "posts/fetch-start";
 const SUCCESS = "posts/fetch-success";
@@ -167,18 +166,3 @@ export const share = (id: string) => async (
   );
 };
 
-export const handleProfileImageSubmit = (payload: { file: File }) =>
-  async (dispatch: Dispatch, getState: () => any, { auth, storage }: IServices) => {
-    if (!auth.currentUser) {
-      return
-    }
-    const { uid } = auth.currentUser
-    const storageRef = storage.ref()
-    const response = await storageRef
-      .child(`profileImages`)
-      .child(`${uid}.jpg`)
-      .put(payload.file)
-
-    const url = await response.ref.getDownloadURL()
-    dispatch(setProfileImage(url))
-  };
